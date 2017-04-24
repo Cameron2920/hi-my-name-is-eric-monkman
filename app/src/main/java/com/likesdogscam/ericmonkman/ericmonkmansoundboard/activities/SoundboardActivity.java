@@ -68,6 +68,7 @@ public class SoundboardActivity extends AppCompatActivity implements SoundClipCe
         soundClipRecyclerView = (RecyclerView) findViewById(R.id.soundClipRecyclerView);
         soundClipRecyclerView.setHasFixedSize(true);
         soundClipRecyclerView.setNestedScrollingEnabled(false);
+        soundClipRecyclerView.setFocusable(false);
         soundClipRecyclerViewLayoutMananger = new LinearLayoutManager(this);
         soundClipRecyclerView.setLayoutManager(soundClipRecyclerViewLayoutMananger);
 
